@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de Predicción de Niveles de Ríos con IA</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Importar Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-1ny4BUj1J/6udUeCdUHr8/JUdWUy2nM3mzBQ3bZkA4LFlkZzk6Xil5GUCdYFf2frnttJbHs+I7nXJivh2xVZQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -24,6 +26,9 @@
         <section id="about" class="container">
             <h2>Acerca del Proyecto</h2>
             <p>Este proyecto tiene como objetivo principal predecir los niveles de ríos utilizando técnicas avanzadas de inteligencia artificial. Al aprovechar algoritmos de aprendizaje automático, proporcionamos pronósticos precisos y oportunos para ayudar a gestionar eficazmente los recursos hídricos.</p>
+            
+            <!-- Indicador para mostrar que hay detalles adicionales -->
+            <a href="#" id="toggle-details">Ver detalles <span>&#x25BC;</span></a>
             
             <!-- Detalles adicionales ocultos -->
             <div class="about-details" id="about-details">
@@ -77,23 +82,40 @@
         <div class="container">
             <section id="contact">
                 <h2>Contacto</h2>
-                <p>Email: info@riverlevelprediction.com</p>
+                <p>Emails de contacto:</p>
+                <ul class="contact-list">
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:hvelazquez@fiuna.edu.py">hvelazquez@fiuna.edu.py</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:maguilar@fiuna.edu.py">maguilar@fiuna.edu.py</a></li>
+                </ul>
+                <p class="github-link">Síguenos en GitHub: <a href="https://github.com/HecVelaz/Prediccion-de-nivel-de-rios" target="_blank"><img src="images/github-icon.png" alt="GitHub Icon" class="github-icon"> GitHub Repositorio</a></p>
             </section>
         </div>
     </footer>
+    
+    
 
     <script>
-        // JavaScript para mostrar/ocultar los detalles adicionales al hacer clic en "Acerca"
-        const aboutSection = document.getElementById('about');
+        // JavaScript para mostrar/ocultar los detalles adicionales al hacer clic en "Ver detalles"
+        const toggleDetails = document.getElementById('toggle-details');
         const aboutDetails = document.getElementById('about-details');
 
-        aboutSection.addEventListener('click', function() {
+        toggleDetails.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita que el enlace navegue
+
             // Alternar la visibilidad de los detalles adicionales
             aboutDetails.style.display = aboutDetails.style.display === 'block' ? 'none' : 'block';
+
+            // Cambiar el texto del enlace según el estado de visualización
+            toggleDetails.innerHTML = aboutDetails.style.display === 'block' ? 'Ocultar detalles <span>&#x25B2;</span>' : 'Ver detalles <span>&#x25BC;</span>';
         });
     </script>
 </body>
 </html>
+
+
+
+
+
 
 
 

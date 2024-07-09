@@ -97,4 +97,43 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* Añade este estilo para quitar las viñetas y centrar los correos en la lista de contactos */
+/* Estilos adicionales para el ícono de GitHub y la lista de contactos */.contact-list {
+    padding: 0;
+    list-style: none;
+}
+
+.contact-list {
+    padding: 0;
+    list-style: none;
+}
+
+.contact-list li {
+    text-align: center; /* Alinear el texto a la izquierda */
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.contact-list li:before {
+    content: "\2022"; /* Código Unicode para la viñeta (•) */
+    position: absolute;
+    left: -20px; /* Ajuste horizontal para centrar la viñeta */
+    color: #3498db; /* Color de la viñeta */
+}
+
+
+.github-link {
+    text-align: center; /* Centrar el texto y el ícono de GitHub */
+    margin-top: 20px; /* Espacio superior para separar de los correos */
+}
+
+.github-icon {
+    width: 16px; /* Tamaño del ícono de GitHub */
+    vertical-align: middle; /* Alinear verticalmente con el texto */
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.github-text {
+    font-size: 14px; /* Tamaño del texto del enlace de GitHub */
+}
 

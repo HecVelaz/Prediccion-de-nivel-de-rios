@@ -17,7 +17,7 @@ header {
     background: #2c3e50; /* Azul oscuro */
     color: #fff; /* Texto blanco */
     padding: 20px 0;
-    border-bottom: 4px solid #3498db; /* Azul claro */
+    border-bottom: #3498db 3px solid; /* Azul claro */
 }
 
 header h1 {
@@ -66,6 +66,15 @@ h2 {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -88,3 +97,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+

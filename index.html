@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI River Level Prediction Project</title>
+    <title>Proyecto de Predicción de Niveles de Ríos con IA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>AI River Level Prediction Project</h1>
+            <h1>Proyecto de Predicción de Niveles de Ríos con IA</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">Acerca</a></li>
+                    <li><a href="#team">Equipo</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -22,19 +22,53 @@
 
     <main>
         <section id="about" class="container">
-            <h2>About the Project</h2>
-            <p>This project aims to predict river levels using advanced AI techniques. By leveraging machine learning algorithms, we provide accurate and timely forecasts to help manage water resources effectively.</p>
+            <h2>Acerca del Proyecto</h2>
+            <p>Este proyecto tiene como objetivo principal predecir los niveles de ríos utilizando técnicas avanzadas de inteligencia artificial. Al aprovechar algoritmos de aprendizaje automático, proporcionamos pronósticos precisos y oportunos para ayudar a gestionar eficazmente los recursos hídricos.</p>
+            
+            <!-- Detalles adicionales ocultos -->
+            <div class="about-details" id="about-details">
+                <h3>Objetivo del Proyecto</h3>
+                <p>Este proyecto tiene como objetivo principal desarrollar y aplicar modelos avanzados de inteligencia artificial para predecir los niveles de ríos. Utilizando datos históricos, nuestro objetivo es proporcionar pronósticos precisos que permitan una gestión eficiente de los recursos hídricos y una respuesta efectiva ante eventos extremos como inundaciones.</p>
+                
+                <h3>Beneficios</h3>
+                <p>Este proyecto ofrece los siguientes beneficios:</p>
+                <ul>
+                    <li>Reducción del Riesgo de Inundaciones: Al anticipar los niveles de los ríos con alta precisión, se pueden implementar medidas preventivas y de respuesta temprana para mitigar los impactos de las inundaciones, protegiendo vidas y propiedades.</li>
+                    <li>Facilitación de la Navegación Segura: Las predicciones precisas de niveles de ríos permiten a los operadores de barcos planificar rutas y operaciones de manera más efectiva, reduciendo el riesgo de encallamientos y optimizando la logística de transporte fluvial en el río Paraguay.</li>
+                </ul>
+                
+                <h3>Tecnologías Utilizadas</h3>
+                <p>El proyecto utiliza las siguientes tecnologías y algoritmos de aprendizaje automático:</p>
+                <ul>
+                    <li>Python como lenguaje de programación principal.</li>
+                    <li>Librerías de ciencia de datos como Pandas, NumPy y Matplotlib para el manejo y visualización de datos.</li>
+                    <li>Scikit-learn para la implementación de modelos de aprendizaje automático, incluyendo regresión y redes neuronales.</li>
+                    <li>TensorFlow o PyTorch para el desarrollo de modelos de redes neuronales profundas, como LSTM para el procesamiento de secuencias temporales.</li>
+                    <li>Técnicas de preprocesamiento de datos como normalización y manejo de datos faltantes para mejorar la calidad de los modelos predictivos.</li>
+                </ul>
+                
+                <h3>Impacto Esperado</h3>
+                <p>Se espera que este proyecto tenga un impacto significativo en las comunidades y autoridades pertinentes al proporcionar predicciones precisas y en tiempo real de los niveles de los ríos. Al anticipar con precisión los cambios en los niveles de agua, se podrán tomar decisiones informadas para:</p>
+                <ul>
+                    <li>Alertar a las comunidades vulnerables y activar protocolos de evacuación temprana durante eventos climáticos extremos.</li>
+                    <li>Optimizar la gestión de recursos hídricos, permitiendo una distribución más eficiente del agua y la planificación de infraestructuras.</li>
+                    <li>Facilitar la navegación fluvial segura al proporcionar información actualizada sobre niveles de agua y condiciones de navegación.</li>
+                    <li>Reducir los costos operativos y mejorar la eficiencia de los servicios públicos relacionados con la gestión de inundaciones y el uso del agua.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="team" class="container">
-            <h2>Our Team</h2>
+            <h2>Nuestro Equipo</h2>
             <div class="team-member">
-                <h3>Person 1</h3>
-                <p>Expert in data science and machine learning. Responsible for data preprocessing and model development.</p>
+                <img src="images/hector-velazquez.jpeg" alt="Héctor Velázquez">
+                <h3>Héctor Velázquez</h3>
+                <p>Estudiante de mecatrónica</p>
             </div>
             <div class="team-member">
-                <h3>Person 2</h3>
-                <p>Specialist in hydrology and environmental science. Focuses on domain-specific insights and validation of predictions.</p>
+                <img src="images/mathias-aguilar.jpeg" alt="Mathias Aguilar">
+                <h3>Mathias Aguilar</h3>
+                <p>Estudiante de mecatrónica</p>
             </div>
         </section>
     </main>
@@ -42,10 +76,28 @@
     <footer>
         <div class="container">
             <section id="contact">
-                <h2>Contact Us</h2>
+                <h2>Contacto</h2>
                 <p>Email: info@riverlevelprediction.com</p>
             </section>
         </div>
     </footer>
+
+    <script>
+        // JavaScript para mostrar/ocultar los detalles adicionales al hacer clic en "Acerca"
+        const aboutSection = document.getElementById('about');
+        const aboutDetails = document.getElementById('about-details');
+
+        aboutSection.addEventListener('click', function() {
+            // Alternar la visibilidad de los detalles adicionales
+            aboutDetails.style.display = aboutDetails.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+

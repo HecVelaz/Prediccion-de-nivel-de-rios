@@ -28,7 +28,7 @@
             <p>Este proyecto tiene como objetivo principal predecir los niveles de ríos utilizando técnicas avanzadas de inteligencia artificial. Al aprovechar algoritmos de aprendizaje automático, proporcionamos pronósticos precisos y oportunos para ayudar a gestionar eficazmente los recursos hídricos.</p>
             
             <!-- Indicador para mostrar que hay detalles adicionales -->
-            <a href="#" id="toggle-details">Ver detalles <span>&#x25BC;</span></a>
+            <a href="#" id="toggle-details">Ver detalles <i class="fas fa-chevron-down"></i></a>
             
             <!-- Detalles adicionales ocultos -->
             <div class="about-details" id="about-details">
@@ -87,12 +87,10 @@
                     <li><i class="fas fa-envelope"></i> <a href="mailto:hvelazquez@fiuna.edu.py">hvelazquez@fiuna.edu.py</a></li>
                     <li><i class="fas fa-envelope"></i> <a href="mailto:maguilar@fiuna.edu.py">maguilar@fiuna.edu.py</a></li>
                 </ul>
-                <p class="github-link"> <a href="https://github.com/HecVelaz/Prediccion-de-nivel-de-rios" target="_blank"><img src="images/github-icon.png" alt="GitHub Icon" class="github-icon"> GitHub Repositorio</a></p>
+                <p class="github-link">Síguenos en GitHub: <a href="https://github.com/HecVelaz/Prediccion-de-nivel-de-rios" target="_blank"><i class="fab fa-github github-icon"></i> GitHub Repositorio</a></p>
             </section>
         </div>
     </footer>
-    
-    
 
     <script>
         // JavaScript para mostrar/ocultar los detalles adicionales al hacer clic en "Ver detalles"
@@ -103,14 +101,19 @@
             event.preventDefault(); // Evita que el enlace navegue
 
             // Alternar la visibilidad de los detalles adicionales
-            aboutDetails.style.display = aboutDetails.style.display === 'block' ? 'none' : 'block';
+            aboutDetails.classList.toggle('collapsed');
 
-            // Cambiar el texto del enlace según el estado de visualización
-            toggleDetails.innerHTML = aboutDetails.style.display === 'block' ? 'Ocultar detalles <span>&#x25B2;</span>' : 'Ver detalles <span>&#x25BC;</span>';
+            // Cambiar el texto del enlace y girar el ícono según el estado de visualización
+            if (aboutDetails.classList.contains('collapsed')) {
+                toggleDetails.innerHTML = 'Ver detalles <i class="fas fa-chevron-down"></i>';
+            } else {
+                toggleDetails.innerHTML = 'Ocultar detalles <i class="fas fa-chevron-up"></i>';
+            }
         });
     </script>
 </body>
 </html>
+
 
 
 

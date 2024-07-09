@@ -137,3 +137,30 @@ footer a:hover {
     font-size: 14px; /* Tamaño del texto del enlace de GitHub */
 }
 
+#toggle-details {
+    display: inline-block;
+    background-color: #3498db; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+}
+
+#toggle-details:hover {
+    background-color: #2980b9; /* Color de fondo al pasar el mouse */
+}
+
+#toggle-details i {
+    margin-left: 5px; /* Espacio entre el texto y el ícono */
+    transition: transform 0.3s ease; /* Transición suave de transformación */
+}
+
+#about-details {
+    display: none; /* Inicialmente oculto */
+    margin-top: 20px;
+}
+
+#about-details.collapsed {
+    display: block; /* Mostrar cuando se activa */
+}

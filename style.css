@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f7fb; /* Un color suave que evoca agua */
+    background-color: #f0f5f9; /* Color de fondo suave */
+    color: #333; /* Color de texto principal */
     line-height: 1.6;
 }
 
@@ -14,50 +15,49 @@ body {
 
 header {
     background: #2c3e50; /* Azul oscuro */
-    color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
     border-bottom: 4px solid #3498db; /* Azul claro */
 }
 
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+header h1 {
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-header ul {
-    padding: 0;
+header nav ul {
     list-style: none;
+    text-align: center;
 }
 
-header li {
-    display: inline-block; /* Mostrar elementos de menú en línea */
+header nav ul li {
+    display: inline-block;
     margin-right: 20px;
 }
 
-header nav {
-    float: right;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
-header .highlight, header .current a {
-    color: #3498db; /* Azul claro para resaltar */
-    font-weight: bold;
-}
-
-header a:hover {
-    color: #e67e22; /* Color de hover naranja */
+header nav ul li a:hover {
+    color: #3498db; /* Azul claro al pasar el mouse */
 }
 
 main {
     padding: 40px 0;
-    background: #fff;
-    border-bottom: 2px solid #ecf0f1; /* Color de borde gris claro */
+    background: #fff; /* Fondo blanco para el contenido principal */
 }
 
-h1, h2 {
-    color: #2c3e50; /* Azul oscuro para títulos */
+h2 {
+    color: #2c3e50; /* Azul oscuro para subtítulos */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .team-member {
@@ -70,13 +70,14 @@ h1, h2 {
 
 footer {
     background: #2c3e50; /* Azul oscuro para el pie de página */
-    color: #fff;
+    color: #fff; /* Texto blanco */
     text-align: center;
     padding: 20px 0;
 }
 
 footer p {
     margin: 0;
+    font-size: 1.1rem;
 }
 
 footer a {

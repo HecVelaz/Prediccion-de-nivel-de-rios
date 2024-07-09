@@ -33,16 +33,11 @@ header ul {
 }
 
 header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header #branding {
-    float: left;
+    display: block;
+    padding: 10px 0;
 }
 
 header nav {
-    float: right;
     margin-top: 10px;
 }
 

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f2f7fb; /* Un color suave que evoca agua */
     line-height: 1.6;
 }
 
@@ -13,11 +13,11 @@ body {
 }
 
 header {
-    background: #333;
+    background: #2c3e50; /* Azul oscuro */
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #77b300 3px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #3498db; /* Azul claro */
 }
 
 header a {
@@ -33,42 +33,43 @@ header ul {
 }
 
 header li {
-    display: block;
-    padding: 10px 0;
+    display: inline-block; /* Mostrar elementos de menú en línea */
+    margin-right: 20px;
 }
 
 header nav {
-    margin-top: 10px;
+    float: right;
 }
 
 header .highlight, header .current a {
-    color: #77b300;
+    color: #3498db; /* Azul claro para resaltar */
     font-weight: bold;
 }
 
 header a:hover {
-    color: #77b300;
+    color: #e67e22; /* Color de hover naranja */
 }
 
 main {
-    padding: 20px 0;
+    padding: 40px 0;
     background: #fff;
+    border-bottom: 2px solid #ecf0f1; /* Color de borde gris claro */
 }
 
 h1, h2 {
-    color: #333;
+    color: #2c3e50; /* Azul oscuro para títulos */
 }
 
 .team-member {
-    background-color: #eaeaea;
-    padding: 15px;
-    margin: 15px 0;
+    background-color: #ecf0f1; /* Fondo gris claro para miembros del equipo */
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background: #333;
+    background: #2c3e50; /* Azul oscuro para el pie de página */
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -79,7 +80,7 @@ footer p {
 }
 
 footer a {
-    color: #77b300;
+    color: #3498db; /* Azul claro para enlaces de pie de página */
     text-decoration: none;
 }
 

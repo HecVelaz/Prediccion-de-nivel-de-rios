@@ -58,25 +58,26 @@ h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
+}.team-members {
+    display: flex; /* Utilizar flexbox para alinear elementos en una fila */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si el espacio es insuficiente */
 }
 
 .team-member {
-    background-color: #ecf0f1; /* Fondo gris claro para miembros del equipo */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    width: calc(50% - 20px); /* Calcular el ancho para dos columnas con margen */
+    margin: 0 10px 10px; /* Añadir margen entre los miembros y al final */
+    text-align: center; /* Centrar el contenido del equipo */
+    box-sizing: border-box; /* Incluir el padding y border en el ancho total */
 }
 
 .team-member img {
-    width: 150px;
+    width: 150px; /* Tamaño de imagen */
     height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%; /* Bordes redondeados para la imagen circular */
+    margin-bottom: 0px; /* Espacio inferior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
-
 footer {
     background: #2c3e50; /* Azul oscuro para el pie de página */
     color: #fff; /* Texto blanco */
@@ -97,11 +98,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-/* Añade este estilo para quitar las viñetas y centrar los correos en la lista de contactos */
-/* Estilos adicionales para el ícono de GitHub y la lista de contactos */.contact-list {
-    padding: 0;
-    list-style: none;
-}
 
 .contact-list {
     padding: 0;
@@ -120,7 +116,6 @@ footer a:hover {
     left: -20px; /* Ajuste horizontal para centrar la viñeta */
     color: #3498db; /* Color de la viñeta */
 }
-
 
 .github-link {
     text-align: center; /* Centrar el texto y el ícono de GitHub */
@@ -159,8 +154,43 @@ footer a:hover {
 #about-details {
     display: none; /* Inicialmente oculto */
     margin-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
 #about-details.collapsed {
-    display: block; /* Mostrar cuando se activa */
+    max-height: 1000px; /* Valor suficientemente grande para mostrar todo el contenido */
 }
+
+#toggle-details2 {
+    display: inline-block;
+    background-color: #3498db; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+}
+
+#toggle-details2:hover {
+    background-color: #2980b9; /* Color de fondo al pasar el mouse */
+}
+
+#toggle-details2 i {
+    margin-left: 5px; /* Espacio entre el texto y el ícono */
+    transition: transform 0.3s ease; /* Transición suave de transformación */
+}
+
+#about-details2 {
+    display: none; /* Inicialmente oculto */
+    margin-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+#about-details2.collapsed {
+    max-height: 1000px; /* Valor suficientemente grande para mostrar todo el contenido */
+}
+

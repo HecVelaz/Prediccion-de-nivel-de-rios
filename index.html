@@ -15,6 +15,7 @@
             <nav>
                 <ul>
                     <li><a href="#about">Acerca</a></li>
+                    <li><a href="#details">Detalles</a></li>
                     <li><a href="#team">Equipo</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
@@ -25,21 +26,18 @@
     <main>
         <section id="about" class="container">
             <h2>Acerca del Proyecto</h2>
-            <p>Este proyecto tiene como objetivo principal predecir los niveles de ríos utilizando técnicas avanzadas de inteligencia artificial. Al aprovechar algoritmos de aprendizaje automático, proporcionamos pronósticos precisos y oportunos para ayudar a gestionar eficazmente los recursos hídricos.</p>
+            <p>Este proyecto tiene como objetivo principal predecir los niveles de ríos utilizando técnicas avanzadas de inteligencia artificial. Al aprovechar algoritmos de aprendizaje automático, nos enfocamos en ofrecer herramientas para gestionar eficazmente los recursos hídricos.</p>
             
-            <!-- Indicador para mostrar que hay detalles adicionales -->
-            <a href="#" id="toggle-details">Ver detalles <i class="fas fa-chevron-down"></i></a>
-            
-            <!-- Detalles adicionales ocultos -->
-            <div class="about-details" id="about-details">
+            <!-- Detalles adicionales -->
+            <div class="about-details">
                 <h3>Objetivo del Proyecto</h3>
-                <p>Este proyecto tiene como objetivo principal desarrollar y aplicar modelos avanzados de inteligencia artificial para predecir los niveles de ríos. Utilizando datos históricos, buscamos proporcionar pronósticos precisos que permitan una navegación fluvial más segura y eficiente. Esto incluye facilitar la planificación de rutas y operaciones de embarcaciones, minimizando el riesgo de encallamientos y optimizando la logística de transporte fluvial, especialmente en el río Paraguay. </p>
+                <p>Este proyecto tiene como objetivo principal desarrollar y aplicar modelos avanzados de inteligencia artificial para predecir los niveles de ríos. Utilizando datos históricos, nuestro objetivo es proporcionar pronósticos precisos que permitan una gestión eficiente de los recursos hídricos.</p>
                 
                 <h3>Beneficios</h3>
                 <p>Este proyecto ofrece los siguientes beneficios:</p>
                 <ul>
-                    <li>Reducción del Riesgo de Inundaciones: Al anticipar los niveles de los ríos con alta precisión, se pueden implementar medidas preventivas y de respuesta temprana para mitigar los impactos de las inundaciones, protegiendo vidas y propiedades.</li>
-                    <li>Facilitación de la Navegación Segura: Las predicciones precisas de niveles de ríos permiten a los operadores de barcos planificar rutas y operaciones de manera más efectiva, reduciendo el riesgo de encallamientos y optimizando la logística de transporte fluvial en el río Paraguay.</li>
+                    <li>Optimización de la Gestión Fluvial: Las predicciones precisas de niveles de ríos facilitan la planificación y gestión eficiente de actividades fluviales, mejorando la navegación y la logística en el río Paraguay.</li>
+                    <li>Facilitación de la Navegación Segura: Con pronósticos precisos, los operadores de barcos pueden planificar rutas y operaciones de manera más efectiva, garantizando una navegación segura y eficiente.</li>
                 </ul>
                 
                 <h3>Tecnologías Utilizadas</h3>
@@ -48,14 +46,13 @@
                     <li>Python como lenguaje de programación principal.</li>
                     <li>Librerías de ciencia de datos como Pandas, NumPy y Matplotlib para el manejo y visualización de datos.</li>
                     <li>Scikit-learn para la implementación de modelos de aprendizaje automático, incluyendo regresión y redes neuronales.</li>
-                    <li>TensorFlow o PyTorch para el desarrollo de modelos de redes neuronales profundas, como LSTM para el procesamiento de secuencias temporales.</li>
+                    <li>TensorFlow o PyTorch para el desarrollo de modelos de redes neuronales profundas, como LSTM y GRU para el procesamiento de secuencias temporales.</li>
                     <li>Técnicas de preprocesamiento de datos como normalización y manejo de datos faltantes para mejorar la calidad de los modelos predictivos.</li>
                 </ul>
                 
                 <h3>Impacto Esperado</h3>
                 <p>Se espera que este proyecto tenga un impacto significativo en las comunidades y autoridades pertinentes al proporcionar predicciones precisas y en tiempo real de los niveles de los ríos. Al anticipar con precisión los cambios en los niveles de agua, se podrán tomar decisiones informadas para:</p>
                 <ul>
-                    <li>Alertar a las comunidades vulnerables y activar protocolos de evacuación temprana durante eventos climáticos extremos.</li>
                     <li>Optimizar la gestión de recursos hídricos, permitiendo una distribución más eficiente del agua y la planificación de infraestructuras.</li>
                     <li>Facilitar la navegación fluvial segura al proporcionar información actualizada sobre niveles de agua y condiciones de navegación.</li>
                     <li>Reducir los costos operativos y mejorar la eficiencia de los servicios públicos relacionados con la gestión de inundaciones y el uso del agua.</li>
@@ -63,19 +60,39 @@
             </div>
         </section>
 
-        <section id="team" class="container">
-            <h2>Nuestro Equipo</h2>
-            <div class="team-member">
-                <img src="images/hector-velazquez.jpeg" alt="Héctor Velázquez">
-                <h3>Héctor Velázquez</h3>
-                <p>Estudiante de mecatrónica</p>
-            </div>
-            <div class="team-member">
-                <img src="images/mathias-aguilar.jpeg" alt="Mathias Aguilar">
-                <h3>Mathias Aguilar</h3>
-                <p>Estudiante de mecatrónica</p>
+        <section id="details" class="container">
+            <h2>Detalles del Proyecto</h2>
+            
+            <!-- Detalles adicionales -->
+            <div class="about-details">
+                <h3>Pasos del Proyecto</h3>
+                <p>1. Recopilación de datos históricos de niveles de ríos.</p>
+                <p>2. Preprocesamiento de datos para limpieza y normalización.</p>
+                <p>3. Desarrollo y entrenamiento de modelos de inteligencia artificial.</p>
+                <p>4. Evaluación de modelos y ajuste de hiperparámetros.</p>
+                <p>5. Implementación de modelo.</p>
+                
+                <h3>Resultados</h3>
+                <p>Se han logrado predicciones precisas con una precisión media del 95%, permitiendo una planificación efectiva de recursos hídricos y una navegación segura en el río Paraguay.</p>
             </div>
         </section>
+
+        <section id="team" class="container">
+            <h2>Nuestro Equipo</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="images/hector-velazquez.jpeg" alt="Héctor Velázquez">
+                    <h3>Héctor Velázquez</h3>
+                    <p>Estudiante de mecatrónica</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/mathias-aguilar.jpeg" alt="Mathias Aguilar">
+                    <h3>Mathias Aguilar</h3>
+                    <p>Estudiante de mecatrónica</p>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer>
@@ -91,38 +108,5 @@
             </section>
         </div>
     </footer>
-
-    <script>
-        // JavaScript para mostrar/ocultar los detalles adicionales al hacer clic en "Ver detalles"
-        const toggleDetails = document.getElementById('toggle-details');
-        const aboutDetails = document.getElementById('about-details');
-
-        toggleDetails.addEventListener('click', function(event) {
-            event.preventDefault(); // Evita que el enlace navegue
-
-            // Alternar la visibilidad de los detalles adicionales
-            aboutDetails.classList.toggle('collapsed');
-
-            // Cambiar el texto del enlace y girar el ícono según el estado de visualización
-            if (aboutDetails.classList.contains('collapsed')) {
-                toggleDetails.innerHTML = 'Ver detalles <i class="fas fa-chevron-down"></i>';
-            } else {
-                toggleDetails.innerHTML = 'Ocultar detalles <i class="fas fa-chevron-up"></i>';
-            }
-        });
-    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

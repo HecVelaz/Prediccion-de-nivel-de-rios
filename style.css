@@ -194,3 +194,17 @@ footer a:hover {
     max-height: 1000px; /* Valor suficientemente grande para mostrar todo el contenido */
 }
 
+.result-image {
+    text-align: center; /* Centra el contenido dentro del div */
+}
+
+.result-image img.centered-image {
+    max-width: 100%; /* Reduzca el tamaño de la imagen al 80% del contenedor */
+    display: block; /* Asegura que la imagen esté centrada correctamente */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+
+.image-caption {
+    font-style: italic;
+    color: #666;
+}

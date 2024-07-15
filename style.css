@@ -8,7 +8,8 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%; /* Increased width for more space */
+    max-width: 1200px; /* Maximum width to ensure it doesn't get too wide */
     margin: auto;
     overflow: hidden;
 }
@@ -21,9 +22,11 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem; /* Tamaño grande para el título */
+    font-size: 2rem; /* Reduced font size for the title */
     text-align: center;
     margin-bottom: 20px;
+    word-wrap: break-word; /* Allow long words to break */
+    overflow-wrap: break-word; /* Support for other browsers */
 }
 
 header nav ul {
@@ -58,7 +61,9 @@ h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
-}.team-members {
+}
+
+.team-members {
     display: flex; /* Utilizar flexbox para alinear elementos en una fila */
     justify-content: center; /* Centrar horizontalmente los elementos */
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan si el espacio es insuficiente */
@@ -78,6 +83,7 @@ h2 {
     margin-bottom: 0px; /* Espacio inferior */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
+
 footer {
     background: #2c3e50; /* Azul oscuro para el pie de página */
     color: #fff; /* Texto blanco */

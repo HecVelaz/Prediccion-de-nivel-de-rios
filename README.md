@@ -12,7 +12,7 @@
 ---
 Documento que resume el proceso desde el primer parcial hasta el final :
 
-* **Informe del Proyecto (PDF):** [Consultar documento PDF](<Presentación de Resultados/Predicción Nivel de Ríos.pdf>)
+* **Informe del Proyecto (PDF):** [Consultar documento PDF](<Presentacion_de_Resultados/Prediccion_Nivel_de_Riios>)
 ## Descripción del Proyecto
 
 Este proyecto aborda el desarrollo e implementación de modelos de aprendizaje profundo (*Deep Learning*) para el pronóstico y predicción del nivel del río Paraguay mediante el análisis de series temporales. Se evalúa el desempeño de distintas arquitecturas de Redes Neuronales Recurrentes (RNN) para optimizar el ajuste temporal e hidrológico.

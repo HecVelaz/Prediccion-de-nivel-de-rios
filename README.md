@@ -1,64 +1,60 @@
-🌊 Predicción del Nivel del Río Paraguay con Redes Neuronales Recurrentes
-📘 Trabajo de la Cátedra de Inteligencia Artificial
-🏫 Facultad de Ingeniería, Universidad Nacional de Asunción
+# Predicción del Nivel del Río Paraguay mediante Redes Neuronales Recurrentes
 
-🧠 Descripción
-Este proyecto tiene como objetivo desarrollar modelos de aprendizaje profundo para predecir el nivel del río Paraguay, utilizando series temporales y redes neuronales recurrentes (RNN). Se implementaron y compararon los siguientes modelos:
+**Facultad de Ingeniería – Universidad Nacional de Asunción (FIUNA)**  
+*Cátedra de Inteligencia Artificial*
+---
 
-🔁 LSTM (Long Short-Term Memory)
+## Resultados: Ventana de Predicción
 
-🔁 GRU (Gated Recurrent Unit)
+![Ventana de Predicción del Nivel del Río](images/prediccion-niveles-rios.png)
+*Figura 1: Visualización comparativa entre los valores reales hidrométricos y la ventana de predicción generada por el modelo.*
 
-🔁 BiGRU (Bidirectional GRU)
+---
+Documento que resume el proceso desde el primer parcial hasta el final :
 
-Además, se aplicó una optimización de hiperparámetros utilizando Optuna 🧪 para mejorar el rendimiento de los modelos.
+* **Informe del Proyecto (PDF):** [Consultar documento PDF](Presentación de Resultados/Predicción Nivel de Ríos.pdf)
+## Descripción del Proyecto
 
-🎯 Objetivos
-📈 Desarrollar modelos precisos para la predicción del nivel del río Paraguay.
+Este proyecto aborda el desarrollo e implementación de modelos de aprendizaje profundo (*Deep Learning*) para el pronóstico y predicción del nivel del río Paraguay mediante el análisis de series temporales. Se evalúa el desempeño de distintas arquitecturas de Redes Neuronales Recurrentes (RNN) para optimizar el ajuste temporal e hidrológico.
 
-🧪 Comparar el rendimiento de diferentes arquitecturas de RNN.
+Las arquitecturas implementadas y comparadas son:
+* **LSTM** (*Long Short-Term Memory*)
+* **GRU** (*Gated Recurrent Unit*)
+* **BiGRU** (*Bidirectional Gated Recurrent Unit*)
 
-🛠️ Optimizar los modelos mediante búsqueda de hiperparámetros con Optuna.
+Para maximizar el rendimiento predictivo, la selección e hiperparametrización de los modelos se realiza de manera automatizada utilizando la librería **Optuna**.
 
-🌍 Contribuir al monitoreo y prevención de eventos hidrológicos extremos.
+---
 
-🧰 Tecnologías Utilizadas
-Python 3.10+
+## Objetivos
 
-TensorFlow / Keras
+* Desarrollar modelos predictivos de alta precisión para la estimación de niveles hidrométricos en el río Paraguay.
+* Realizar un análisis comparativo formal entre las arquitecturas RNN (LSTM, GRU y BiGRU).
+* Optimizar la convergencia y los hiperparámetros de las redes mediante búsqueda automatizada con Optuna.
+* Aportar herramientas analíticas orientadas al monitoreo y la prevención de eventos hidrológicos extremos.
 
-Pandas, NumPy
+---
 
-Matplotlib, Seaborn
+## Tecnologías y Librerías
 
-Scikit-learn
+* **Lenguaje de Programación:** Python 3.10+
+* **Marco de Aprendizaje Profundo:** TensorFlow / Keras
+* **Procesamiento y Análisis de Datos:** Pandas, NumPy
+* **Modelado y Métricas:** Scikit-learn
+* **Optimización de Hiperparámetros:** Optuna
+* **Visualización de Datos:** Matplotlib, Seaborn
 
-Optuna
+---
 
-📂 Estrucutura
+## Estructura del Repositorio
 
-📦 Prediccion-de-nivel-de-rios/
- ┣ 📂 codigos/             → Scripts de entrenamiento y evaluación de modelos
-
- ┣ 📂 datasets/            → Conjuntos de datos utilizados
-
- ┣ 📂 images/              → Visualizaciones y gráficos generados
-
- ┣ 📂 Primer_parcial/      → Material del primer parcial
-
- ┣ 📂 Segundo_Parcial/     → Material del segundo parcial
-
- ┣ 📂 Final/    	    → Material del Final
-
- ┣ 📄 README.md            → Este archivo
-
-📈 Resultados Esperados
-Visualización de las predicciones frente a los valores reales del nivel del río.
-
-Métricas de evaluación como MAE, RMSE y R² para cada modelo.
-
-Gráficos de convergencia y optimización de hiperparámetros con Optuna.
-
-👨‍🏫 Créditos
-Este trabajo fue desarrollado como parte de la materia Inteligencia Artificial
-📍 Facultad de Ingeniería — Universidad Nacional de Asunción
+```text
+Prediccion-de-nivel-de-rios/
+├── codigos/            # Scripts de procesamiento, entrenamiento y evaluación
+├── datasets/           # Conjuntos de datos históricos del nivel del río
+├── Final/              # Evaluación final y consolidado del proyecto
+├── images/             # Visualizaciones, gráficos de convergencia y predicciones
+├── Primer_parcial/     # Material y entregables correspondientes a la Etapa 1
+├── Segundo_Parcial/    # Material y entregables correspondientes a la Etapa 2
+├── Final/              # Evaluación final y consolidado del proyecto
+└── README.md           # Documentación principal del repositorio
